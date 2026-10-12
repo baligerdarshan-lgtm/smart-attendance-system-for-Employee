@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Environment variables & secrets
+.env
+.env.local
+*.secret
+secrets.json
+
+# SQLite Database & Storage
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+!database/.gitkeep
+
+# Employee Biometrics & Private Generated Data
+face_data/*.npy
+face_data/*.npz
+static/images/employees/*
+!static/images/employees/.gitkeep
+qr_codes/*.png
+!qr_codes/.gitkeep
+
+# Large ONNX Model weight binaries (store in models/ locally or download via setup script)
+# models/*.onnx
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Flask test / temporary files
+instance/
+.pytest_cache/
